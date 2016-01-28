@@ -16,6 +16,8 @@
         html, body {
             padding: 0;
             margin: 0;
+            font-family: arial;
+            font-size: .95em;
         }
 
         #map {
@@ -27,6 +29,11 @@
 
 <body>
 <div id="map"></div>
+<div style="position: absolute; bottom: 16px; right: 5px; width: 150px; padding: 5px; height: 80px; background-color: #FFF; border: 1px solid #333;">
+    <svg height="21" width="20"><circle cx="10" cy="13" r="7" stroke="black" stroke-width="1" fill="green" fill-opacity=".8"/></svg>Active Mine<br>
+    <svg height="21" width="20"><circle cx="10" cy="13" r="7" stroke="black" stroke-width="1" fill="yellow" fill-opacity=".8"/></svg>New Mine<br>
+    <svg height="21" width="20"><circle cx="10" cy="13" r="7" stroke="black" stroke-width="1" fill="red" fill-opacity=".8"/></svg>Not Active Mine
+</div>
 <script>
     // geojson of mine locations
     var mineLocations = {
